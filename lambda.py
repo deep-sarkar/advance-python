@@ -25,6 +25,9 @@ print('d :',multiply(3))
 
 
 
+
+
+
 print("----- map() -----")
 """
 map(func, *iterables) : it is used to perform some small operations to all the elements in iterable ie. sequence like list.
@@ -42,6 +45,12 @@ subjects = ['math', 'english','science']
 subj_in_upper_case = list(map(str.upper, subjects))
 print('subjects in upper case :',subj_in_upper_case)
 
+
+
+
+
+
+
 print("----- zip() -----")
 """
 zip(iterable1, iterable2) : used to create list of touples of elements of 2 list
@@ -53,6 +62,12 @@ odd  = [1, 3, 5, 7]
 my_touple = list(zip(odd, even))
 print('touple of odd even :',my_touple)
 
+
+
+
+
+
+
 print("----- filter() -----")
 """
 filter(func, *iterable) : filter is used to filter specific results or element from list
@@ -61,3 +76,23 @@ my_list = [1,2,3,4,5,6,7,8,9]
 
 filter_even = list(filter(lambda a: a%2 == 0, my_list))
 print('all even filtered numbers :',filter_even)
+
+
+
+
+
+
+
+print("----- reduce() -----")
+"""
+reduce(func , *iterable) : it is used to perform arithmatic operation in a single list and output will be 
+  string type or int type
+- we have to import it from functools
+"""
+
+from functools import reduce
+
+reduce_list = [1,2,3,4,5]
+
+sum_by_reduce = reduce(lambda a , b : a + b, reduce_list)
+print('sum by reduce :',sum_by_reduce)
