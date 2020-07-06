@@ -13,8 +13,8 @@ print('b :',b(7,2))
 
 """"""
 
-def myfunc(n):        #example 
-  return lambda a : a * n
+def myfunc(n):        #example c : myfunc(n) takes a number as an argument and returns lambda function. 
+  return lambda a : a * n # ie by this we can create one more 1 line function.
 
 twice = myfunc(2)
 print('c :',twice(20))
@@ -22,7 +22,6 @@ print('c :',twice(20))
 multiply = myfunc(3)
 print('d :',multiply(3))
 
+"""
 
-
-
-
+"""
