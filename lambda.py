@@ -27,7 +27,7 @@ print('d :',multiply(3))
 
 print("----- map() -----")
 """
-map(func, *iterables) : it is used to perform some small operations to allthe elements in iterable ie. sequence like list.
+map(func, *iterables) : it is used to perform some small operations to all the elements in iterable ie. sequence like list.
  commonly we can use lambda function as a function argument.
 """
 #example 1
@@ -41,3 +41,15 @@ subjects = ['math', 'english','science']
 
 subj_in_upper_case = list(map(str.upper, subjects))
 print('subjects in upper case :',subj_in_upper_case)
+
+print("----- zip() -----")
+"""
+zip(iterable1, iterable2) : used to create list of touples of elements of 2 list
+"""
+
+even = [2, 4, 6, 8]
+odd  = [1, 3, 5, 7]
+
+my_touple = list(zip(odd, even))
+print('touple of odd even :',my_touple)
+
