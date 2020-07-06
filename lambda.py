@@ -53,3 +53,11 @@ odd  = [1, 3, 5, 7]
 my_touple = list(zip(odd, even))
 print('touple of odd even :',my_touple)
 
+print("----- filter() -----")
+"""
+filter(func, *iterable) : filter is used to filter specific results or element from list
+"""
+my_list = [1,2,3,4,5,6,7,8,9]
+
+filter_even = list(filter(lambda a: a%2 == 0, my_list))
+print('all even filtered numbers :',filter_even)
